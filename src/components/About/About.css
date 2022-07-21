@@ -1,0 +1,140 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.about__upArrow {
+  margin-top: 1px;
+  position: absolute;
+  color: #262325;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0);
+  transform: scale(2.5);
+}
+
+.about__upArrow:hover {
+  color: #ffc3c3;
+  cursor: pointer;
+}
+
+.about__headerText {
+  display: flex;
+  position: absolute;
+  font-size: 40px;
+  margin-top: 55px;
+  color: #262325;
+}
+
+.about__leftArrow {
+  display: flex;
+  position: absolute;
+  transform: scale(2);
+  color: #262325;
+  margin-top: 35vh;
+  right: 88vw;
+}
+
+.about__leftArrow:hover {
+  color: white;
+}
+
+.about__rightArrow {
+  display: flex;
+  position: absolute;
+  transform: scale(2);
+  color: #262325;
+  margin-top: 35vh;
+  left: 88vw;
+}
+
+.about__rightArrow:hover {
+  color: white;
+}
+
+.slide {
+  margin-top: 16vh;
+  margin-bottom: 10vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.current {
+  opacity: 1;
+}
+
+.content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  flex-wrap: nowrap;
+  text-align: center;
+  margin-top: 4vh;
+  color: #262325;
+  animation: slide-up 1s ease .5s;
+}
+
+.content h2 {
+  white-space: nowrap;
+}
+
+.content p {
+  margin-top: 5px;
+}
+
+.slideImage {
+  width: 275px;
+  height: 275px;
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  border-radius: 4%;
+}
+
+.about__downArrow {
+  position: absolute;
+  margin-top: 83vh;
+  color: #262325;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0);
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+
+.about__downArrow:hover {
+  color: #ff5454;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px) scale(2);
+  }
+  to {
+    transform: translateY(-15px) scale(1.8);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px) scale(2);
+  }
+  to {
+    transform: translateY(-15px) scale(1.8);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about__upArrow {
+    transform: scale(2);
+  }
+}
+

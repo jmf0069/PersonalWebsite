@@ -1,0 +1,133 @@
+.home {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 0.8s ease-in 0.5s both;
+  animation: fade-in 0.8s ease-in 0.5s both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-2 {
+  -webkit-animation: fade-in-2 1.2s ease-in 1.5s both;
+  animation: fade-in-2 1.2s ease-in 1.5s both;
+}
+
+@-webkit-keyframes fade-in-2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home__intro {
+  padding-top: 160px;
+  font-size: 36px;
+  color: #262325;
+}
+
+.home__description {
+  padding-top: 10px;
+  color: #262325;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aub {
+  color: #f68026;
+}
+
+.uni {
+  color: #496e9c;
+}
+
+.home__downArrow {
+  margin-top: 305px;
+  color: #262325;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0);
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+.home__downArrow:hover {
+  color: #ff5454;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px) scale(2);
+  }
+  to {
+    transform: translateY(-15px) scale(1.8);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px) scale(2);
+  }
+  to {
+    transform: translateY(-15px) scale(1.8);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__intro {
+    padding-top: 180px;
+    font-size: 24px;
+  }
+  .home__description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home__intro {
+    padding-top: 180px;
+    font-size: 18px;
+  }
+  .home__description {
+    font-size: 13px;
+  }
+}
