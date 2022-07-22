@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 90vh;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
 .work__upArrow {
-  padding-top: 0px;
+  padding-top: 0;
   position: absolute;
   color: #262325;
   -webkit-backface-visibility: hidden;

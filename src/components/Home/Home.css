@@ -6,9 +6,37 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  height: 100vh;
+  height: 97vh;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.home__container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 8rem;
+  bottom: 30rem;
+}
+
+.home__downArrow {
+  margin-top: 305px;
+  display: flex;
+  position: absolute;
+  bottom: 4rem;
+  color: #262325;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0);
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+.home__downArrow:hover {
+  color: #ff5454;
+  cursor: pointer;
 }
 
 .fade-in {
@@ -81,19 +109,7 @@
   color: #496e9c;
 }
 
-.home__downArrow {
-  margin-top: 305px;
-  color: #262325;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1, 1);
-  transform: translateZ(0);
-  animation: bounce 1s infinite alternate;
-  -webkit-animation: bounce 1s infinite alternate;
-}
-.home__downArrow:hover {
-  color: #ff5454;
-  cursor: pointer;
-}
+
 
 @keyframes bounce {
   from {

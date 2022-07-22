@@ -1,13 +1,17 @@
 .about {
   display: flex;
+  position: relative;
   justify-content: center;
   align-content: center;
+  margin-left: auto;
+  margin-right: auto;
   height: 100vh;
   overflow: hidden;
 }
 
 .about__upArrow {
-  margin-top: 1px;
+  margin-top: 2px;
+  display: flex;
   position: absolute;
   color: #262325;
   -webkit-backface-visibility: hidden;
@@ -25,7 +29,7 @@
   display: flex;
   position: absolute;
   font-size: 40px;
-  margin-top: 55px;
+  margin-top: 2.5rem;
   color: #262325;
 }
 
@@ -34,12 +38,13 @@
   position: absolute;
   transform: scale(2);
   color: #262325;
-  margin-top: 35vh;
-  right: 88vw;
+  margin-top: 16rem;
+  margin-right: 23rem;
 }
 
 .about__leftArrow:hover {
-  color: white;
+  color: #ffc3c3;
+  cursor: pointer;
 }
 
 .about__rightArrow {
@@ -47,17 +52,18 @@
   position: absolute;
   transform: scale(2);
   color: #262325;
-  margin-top: 35vh;
-  left: 88vw;
+  margin-top: 16rem;
+  margin-left: 23rem;
 }
 
 .about__rightArrow:hover {
-  color: white;
+  color: #ffc3c3;
+  cursor: pointer;
 }
 
 .slide {
-  margin-top: 16vh;
-  margin-bottom: 10vh;
+  margin-top: 7.5rem;
+  margin-bottom: 5rem;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -78,7 +84,7 @@
   width: 70%;
   flex-wrap: nowrap;
   text-align: center;
-  margin-top: 4vh;
+  margin-top: 1rem;
   color: #262325;
   animation: slide-up 1s ease .5s;
 }
@@ -89,6 +95,8 @@
 
 .content p {
   margin-top: 5px;
+  max-width: 50rem;
+  font-size: 18px;
 }
 
 .slideImage {
@@ -100,8 +108,9 @@
 }
 
 .about__downArrow {
+  display: flex;
   position: absolute;
-  margin-top: 83vh;
+  bottom: 5rem;
   color: #262325;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1, 1);
@@ -135,6 +144,28 @@
 @media screen and (max-width: 480px) {
   .about__upArrow {
     transform: scale(2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slideImage {
+    width: 325px;
+    height: 325px;
+  }
+
+  .about__rightArrow {
+    margin-top: 18rem;
+    margin-left: 28rem;
+  }
+
+  .about__leftArrow {
+    margin-top: 18rem;
+    margin-right: 28rem;
+  }
+
+  .about__headerText {
+    margin-top: 2rem;
+    font-size: 50px;
   }
 }
 
